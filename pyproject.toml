@@ -1,0 +1,25 @@
+[project]
+name = "documentation-helper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Asif Iqbal", email = "asif36iqbal@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "black>=26.10.1",
+    "isort>=9.0.2",
+    "langchain>=1.5.0",
+    "langchain-ollama>=1.1.0",
+    "langchain-pinecone>=0.2.13",
+    "streamlit>=1.67.0",
+    "streamlit-chat>=0.1.1",
+]
+
+[project.scripts]
+documentation-helper = "documentation_helper:main"
+
+[build-system]
+requires = ["uv_build>=0.13.6,<0.14.0"]
+build-backend = "uv_build"
